@@ -7,11 +7,8 @@ RUN pip install keras
 RUN pip --no-cache-dir install \
         tqdm \
         seaborn \
-        hdf5 \
         statsmodels \
-        scikit-image \
-        bokeh \
-	jupyter_contrib_nbextensions
+        scikit-image
 
 # Configure notebook plugins
 RUN ./nbextensions.sh
