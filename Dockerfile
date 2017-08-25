@@ -11,4 +11,5 @@ RUN pip --no-cache-dir install \
         scikit-image
 
 # Configure notebook plugins
+COPY nbextensions.sh ./
 RUN ./nbextensions.sh
