@@ -12,7 +12,7 @@ RUN pip --no-cache-dir install \
 
 ## Configure Jupiter notebook extensions
  # Enable JS widgets
-  RUN jupyter nbextension enable --py widgetsnbextension
+  RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
  # Install contributed notebook extensions
   RUN pip install https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tarball/master
   RUN jupyter contrib nbextension install --system
