@@ -1,4 +1,4 @@
-from tensorflow/tensorflow:latest-gpu-py3
+from tensorflow/tensorflow:1.4.1-gpu-py3
 
 # The main point
 RUN pip install keras
@@ -6,6 +6,7 @@ RUN pip install keras
 # Nice to haves
 RUN pip --no-cache-dir install \
         tqdm \
+        keras-tqdm \ 
         seaborn \
         statsmodels \
         scikit-image
