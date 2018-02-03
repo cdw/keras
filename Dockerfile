@@ -1,4 +1,4 @@
-from tensorflow/tensorflow:latest-py3
+from tensorflow/tensorflow:1.4.1-py3
 
 # The main point
 RUN pip install keras
@@ -8,6 +8,7 @@ RUN pip --no-cache-dir install \
         tqdm \
         seaborn \
         statsmodels \
+        keras-tqdm\
         scikit-image
 
 ## Configure Jupiter notebook extensions
